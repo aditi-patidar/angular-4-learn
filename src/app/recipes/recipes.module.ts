@@ -9,6 +9,7 @@ import {RecipeItemComponent} from './recipe-list/recipe-item/recipe-item.compone
 import {RecipeEditComponent} from './recipe-edit/recipe-edit.component';
 import {RecipeStartComponent} from './recipe-start/recipe-start.component';
 import {RecipesRoutingModule} from './recipes-routing.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {RecipesRoutingModule} from './recipes-routing.module';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    RecipesRoutingModule
+    RecipesRoutingModule,
+    NgbModule.forRoot()// This helps in opening and closing dropdown menu.
   ]
 })
 
